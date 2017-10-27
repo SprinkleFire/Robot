@@ -45,6 +45,7 @@ public class RobotTest {
 		walk = new Walk(3.5);
 		Robot robot = new Robot(head, weight, battery, chest, walk, scanner);
 		robot.walk();
+		System.out.println("Battery remaing " + battery.toString());
 	}
 
 	@Test
@@ -53,6 +54,7 @@ public class RobotTest {
 		weight = new Weight(3);
 		Robot robot = new Robot(head, weight, battery, chest, walk, scanner);
 		robot.walk();
+		System.out.println("Battery remaing " + battery.toString());
 	}
 
 	@Test
@@ -60,6 +62,7 @@ public class RobotTest {
 		weight = new Weight(12);
 		Robot robot = new Robot(head, weight, battery, chest, walk, scanner);
 		robot.walk();
+		System.out.println("Battery remaing " + battery.toString());
 	}
 
 	@Test
