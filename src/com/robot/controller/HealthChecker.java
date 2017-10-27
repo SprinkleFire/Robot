@@ -84,7 +84,7 @@ public class HealthChecker {
 
 	public void scan() {
 		// scanning operation from api result will send to Chest LED.
-		if (null != scanner && !scanner.isSuccess()) {
+		if (null != scanner && scanner.isSuccess()) {
 			chest.setStatus("Scanned Sccess");
 		} else {
 			chest.setStatus("Scan Failure");
